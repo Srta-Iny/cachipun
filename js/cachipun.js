@@ -27,7 +27,7 @@ alert("El computador a elgido: "+ jugadaCpu);
 
 if (jugadaUser === "piedra"){
 	if(jugadaCpu === "piedra"){
-		document.getElementById("demo").innerHTML=("oh! hubo un empate");
+		alert("oh! hubo un empate");
 	}else if (jugadaCpu === "tijera"){
 		alert("Ganaste ^^!!");
 	}else{
