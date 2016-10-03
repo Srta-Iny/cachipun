@@ -12,43 +12,43 @@ console.log(numRedondo);
 
 /* 0:piedra/ 1: tijera / 2:papel */
 
-if (numRedondo == 0){
+if(numRedondo === 0){
 	jugadaCpu = "piedra";
-}else if ( numRedondo == 1){
+}else if ( numRedondo === 1){
 	jugadaCpu = "tijera";
 }else{
 	jugadaCpu ="papel";
 }
 alert("ahora le toca a la cpu elegir");
 console.log(jugadaCpu);
-alert(" El computador a elgido: "+jugadaCpu)
+alert("El computador a elgido: "+ jugadaCpu);
 
 /* resultado quien gana?*/
 
 if (jugadaUser === "piedra"){
-	if(jugadaCpu=="piedra"){
-		alert("oh! hubo un empate");
-	}else if (jugadaCpu == "tijera"){
+	if(jugadaCpu === "piedra"){
+		document.getElementById("demo").innerHTML=("oh! hubo un empate");
+	}else if (jugadaCpu === "tijera"){
 		alert("Ganaste ^^!!");
 	}else{
 		alert("lo siento haz perdido u.u");
 	}
 }else if (jugadaUser === "tijera"){
-	if(jugadaCpu== "tijera"){
+	if(jugadaCpu === "tijera"){
 		alert("oh! hubo un empate");
-	}else if (jugadaCpu == "papel"){
+	}else if (jugadaCpu === "papel"){
 		alert("Ganaste ^^!!");
 	}else{
 		alert("lo siento haz perdido u.u");
 	}
-}else if (jugadaUser== "papel"){
-	if(jugadaCpu== "papel"){
+}else if (jugadaUser === "papel"){
+	if(jugadaCpu === "papel"){
 		alert("oh! hubo un empate");
-	}else if (jugadaCpu == "piedra"){
+	}else if (jugadaCpu === "piedra"){
 		alert("Ganaste ^^!!");
 	}else{
 		alert("lo siento haz perdido u.u");
 	}
 }else{
-	alert("debes elegir una opcion")
+	alert("debes elegir una opcion");
 }
